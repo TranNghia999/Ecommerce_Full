@@ -1,0 +1,494 @@
+@import "tailwindcss";
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f5f0f0;
+    color: #3e3e3e;
+    overflow-x: hidden;
+}
+
+p{
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+h1, h2, h3, h4, h4, h6{ font-weight: 600;}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.text-primary {
+    color: #ff5252;
+    /* Màu đỏ hoặc bất kỳ màu nào bạn muốn */
+}
+
+/* Thanh cuộn của trang web */
+::-webkit-scrollbar {
+    width: 8px !important;
+    height: 8px !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff5252;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+    background: #ccc;
+}
+
+.header .top-strip {
+    border-top: 1px solid rgba(0, 0, 0, 1);
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+/* Của Shop now */
+.btn-org1{
+    background: #ff5252 !important;
+    color: #fff !important;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 7px 20px !important;
+}
+.btn-org1:hover{
+    background: #171717 !important;
+}
+
+.btn-org1.btn-border{
+    background: none !important;
+    color: #ff5252 !important;
+    border: 1px solid #ff5252 !important;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 7px 20px !important;
+}
+.btn-org1.btn-border1:hover{
+    background: #171717 !important;
+    color: #fff !important;
+     border: 1px solid #171717 !important;
+}
+
+/* Của Hàng giỏ hàng */
+.btn-org{
+    background: #fff !important;
+    color: #ff5252 !important;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 7px 20px !important;
+}
+.btn-org:hover{
+    background: #171717 !important;
+}
+
+.btn-org.btn-border{
+    background: none !important;
+    color: #ff5252 !important;
+    border: 1px solid #ff5252 !important;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 7px 20px !important;
+}
+.btn-org.btn-border:hover{
+    background: #171717 !important;
+    color: #fff !important;
+     border: 1px solid #171717 !important;
+}
+
+.btn-lg{
+    font-size: 18px;
+    padding: 10px 20px !important;
+}
+.btn-sml{
+    font-size: 12px !important;
+    padding: 5px 20px !important;
+}
+
+.link:hover {
+    color: #ff5252 !important;
+}
+
+.scroll::-webkit-scrollbar{
+    width: 5px !important;
+}
+.scroll::-webkit-scrollbar-thumb{
+    background: #ccc !important;
+}
+/* màu chỗ giỏ hàng */
+.MuiBadge-badge {
+    background-color: #ff5252 !important;
+}
+
+nav ul button {
+    text-transform: capitalize !important;
+}
+
+nav ul button:hover {
+    background: none !important;
+}
+
+/* Thanh trượt slider */
+.sliderHome {
+    overflow: inherit !important;
+}
+
+.homeSlider .swiper-button-prev:hover,
+.homeSlider .swiper-button-next:hover {
+    background-color: #ff5252 !important; /* Đảm bảo nền được áp dụng */
+}
+.homeSlider .swiper-button-prev:hover::after,
+.homeSlider .swiper-button-next:hover::after {
+    color: #fff !important;
+}
+
+/* Nút thanh trượt "<" ">" của slider */
+.swiper-button-prev,
+.swiper-button-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 100%;
+    width: 45px;
+    min-width: 45px;
+    box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 22px !important; 
+    color: #000;
+    opacity: 0.6; /* Làm mờ nút khi nhấp */
+    transition: opacity 0.1s ease; /* Hiệu ứng chuyển đổi mượt */
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background: #ff5252 !important; /* Nền màu đỏ khi hover */
+    opacity: 0.6; /* Làm mờ nút khi nhấp */
+    transition: opacity 0.1s ease; /* Hiệu ứng chuyển đổi mượt */
+   
+}
+
+.swiper-button-prev:hover::after,
+.swiper-button-next:hover::after {
+    color: #fff !important; /* Màu chữ trắng khi hover */
+    opacity: 0.6; /* Làm mờ nút khi nhấp */
+    transition: opacity 0.1s ease; /* Hiệu ứng chuyển đổi mượt */
+   
+}
+
+.smlBtn .swiper-button-prev,
+.smlBtn .swiper-button-next {
+    width: 30px !important;
+    height: 30px !important;
+    min-width: 30px !important;
+    top: 55% !important;
+}
+
+.smlBtn .swiper-button-prev:after,
+.smlBtn .swiper-button-next:after {
+    font-size: 18px !important;
+    color: #000 !important;
+    
+}
+.smlBtn .swiper-button-prev:hover,
+.smlBtn .swiper-button-next:hover {
+    background: #ff5252 !important;
+}
+.smlBtn .swiper-button-prev:hover::after,
+.smlBtn .swiper-button-next:hover::after {
+    color: #fff !important;
+}
+
+/* Nút thanh trượt Slider nhỏ dưới Slider lớn */
+/* Nút < >*/
+.homeCatSlider {
+    overflow: inherit !important; /*Kế thừa phần tử cha */
+}
+.swiper{
+    overflow: inherit !important; 
+}
+
+.homeCatSlider .swiper-button-prev,
+.homeCatSlider .swiper-button-next {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+}
+
+.homeCatSlider .swiper-button-prev:after,
+.homeCatSlider .swiper-button-next:after {
+    font-size: 16px !important;
+}
+
+.homeCatSlider .swiper-button-prev {
+    left: -10px !important;
+}
+
+.homeCatSlider .swiper-button-next {
+    right: -10px !important;
+}
+
+.homeCatSlider .item {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.homeCatSlider .swiper-button-prev:hover,
+.homeCatSlider .swiper-button-next:hover {
+    background: #ff5252 !important;
+}
+
+.homeCatSlider .swiper-button-prev:hover::after,
+.homeCatSlider .swiper-button-next:hover::after {
+    color: #fff !important;
+}
+
+/* Di chuột vào ảnh thì nó động */
+.homeCatSlider .item:hover img {
+    transform: scale(1.1);
+}
+
+
+/* css của Tab => home */
+.MuiTabs-indicator {
+    background-color: #ff5252 !important;
+}
+
+.MuiTab-textColorPrimary.Mui-selected {
+    color: #ff5252 !important;
+}
+
+
+/* css của Tab => product */
+.productsSlider .swiper-wrapper {
+    padding: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+footer form input::placeholder {
+   font-size: 14px;
+}
+
+.css-imrjgg-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+.css-imrjgg-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+    color:#ff5252 !important;
+}
+.MuiFormControlLabel-label {
+    font-size: 13px !important;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* BANNERV2 */
+.swiper-pagination-bullet-active {
+    background: #ff5252 !important;
+}
+
+.homeSliderV2 .swiper-slide-active .info{  right: 0px !important;  opacity: 1 ; }
+.homeSliderV2 .swiper-slide-active .info h4{  right: 0px !important;  opacity: 1 ; }
+.homeSliderV2 .swiper-slide-active .info h3{  right: 0px !important;  opacity: 1 ; }
+.homeSliderV2 .swiper-slide-active .info h2{  right: 0px !important;  opacity: 1 ; }
+.homeSliderV2 .swiper-slide-active .info .btn_{  right: 0px !important;  opacity: 1 ; }
+
+.homeSliderV2 .info h4{ transition-duration: 1.2s;}
+.homeSliderV2 .info h3{ transition-duration: 1.5s;}
+.homeSliderV2 .info h2{ transition-duration: 1.8s;}
+.homeSliderV2 .info .btn_{ transition-duration: 2.1s;}
+
+/* code ở Sidebar */
+.sidebar .MuiButtonBase-root{
+    padding: 6px !important;
+}
+
+.ReactCollapse--collapse {
+  transition: height 400ms;
+}
+
+.itemViewActions button.active svg{
+    color: #ff5252 !important;
+    opacity: 1;
+}
+
+.Mui-selected.MuiPaginationItem-page{
+    background-color: #ff5252 !important;
+    color: #fff !important;
+}
+.shadow-md,.shadow-lg{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24) !important;
+}
+.zoomProductSliderThumbs.space .swiper-wrapper {
+   padding-top: 38px !important;
+}
+
+.zoomProductSliderThumbs .swiper-button-next{
+    bottom: 0px !important;
+    right: inherit !important;
+    top: inherit !important;
+    width: 100% !important;
+    height: 30px !important;
+    border-radius: 0px !important;
+}
+.zoomProductSliderThumbs .swiper-button-next:after{
+    transform: rotate(90deg) ;
+}
+.zoomProductSliderThumbs .swiper-button-prev{
+    top: 20px !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 30px !important;
+    border-radius: 0px !important;
+}
+.zoomProductSliderThumbs .swiper-button-prev:after{
+    transform: rotate(90deg) ;
+}
+
+/* code thông tin sản phẩm ở ProductDetails */
+.productContent .actions button{
+    min-width: 40px !important;
+    height: 30px !important;
+    border: 1px solid rgba(0,0,0,0.1) !important;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Thanh cuộn chỗ bình luận */
+
+.reviewScroll::-webkit-scrollbar { 
+    width: 5px !important;
+}
+.reviewScroll::-webkit-scrollbar-thumb {
+    background: #ccc !important;
+}
+
+.productDetailsModal .MuiDialogContent-root{
+    padding: 0px !important;
+}
+/* code giỏ hàng */
+.cartPanel .MuiPaper-root{
+    width: 400px;
+    overflow: hidden !important;
+}
+
+#size-menu .MuiButtonBase-root{
+    font-size: 12px !important;
+}
+
+/* code của hộp OTP */
+.otpBox input{
+    border: 1px solid rgba(0, 0, 0, 0.3) !important;
+    outline: none !important;
+    border-radius: 4px;
+}
+
+.otpBox input:focus{
+    border: 1px solid rgba(0, 0, 0, 0.7) !important;
+}
+.otpBox .container{
+    height: 90vh;
+    display: flex;
+}
+
+/* Nút tài khoản */
+#account-menu .MuiPaper-root{
+    width: 200px !important;
+}
+
+.myAccountTabs li a{
+    position: relative;
+    display: block;
+}
+.myAccountTabs li a:before{
+    content: '';
+    width: 3px;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    background: #ff5252;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+.myAccountTabs li a.active::before{
+    height: 100%;
+    opacity: 1;
+    top: 0px;
+}
+.myAccountTabs li a.active button svg{
+    color: #ff5252 !important;
+     opacity: 1 !important;
+}
+/* Trình tải ở Đăng Kí */
+button .MuiCircularProgress-root{width: 30px !important; height: 30px !important;}
+
+
+/* code thanh tài khoản ở Hearder */
+.myAccountWrap {
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 200px;
+  max-width: 250px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.myAccountWrap .info {
+  flex: 1;
+  overflow: hidden;
+}
+
+.myAccountWrap .info h4,
+.myAccountWrap .info span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  line-height: 1.2;
+}
+
+/* code chiều rộng của thanh số điện thoại mã định danh quốc gia  */
+.react-international-phone-input {
+  width: 100% !important;
+}
+
+.react-international-phone-country-selector-button {width: 55px !important;}
+.react-international-phone-input-container {border: 1px solid rgba(0,0,0,0.1) !important;}
+
+/* code css địa chỉ thanh toán */
+.MuiDialog-paper{width: 700px !important; max-width: 700px !important;}
+
+/* code của sản phẩm hiện lên */
+.productDetailsModal .MuiDialog-paper {
+  width: 1350px !important;
+  max-width: 1350px !important;
+  
+}
+
+
+/* Đổ bóng của header */
+header {
+  box-shadow: 0px 1px 5px #0000001a;
+}
+
+.MuiCircularProgress-root {
+    color: #ff5252 !important;
+}

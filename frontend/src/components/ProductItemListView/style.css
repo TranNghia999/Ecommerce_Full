@@ -1,0 +1,20 @@
+.productItem .title {
+  line-height: 18px;
+}
+/* Đảm bảo icon luôn hiển thị màu trắng khi hover */
+.productItem .actions button:hover svg {
+  color: #fff !important;
+}
+
+/* Nếu cần, ép lại background color */
+.productItem .actions button:hover {
+  background-color: #ff5252 !important;
+}
+
+/* Tránh icon mất tương tác hoặc bị ẩn */
+.productItem .actions button svg {
+  width: 18px;
+  height: 18px;
+  color: black;
+  pointer-events: none !important;
+}
